@@ -1,3 +1,112 @@
-#heading{
-    color: brown;
+.header {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid red ;
+    padding-left: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(45deg, white,black);
+    outline: 5px solid #2980b9;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    
+    
 }
+
+.logo{
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    outline: 2px solid black;
+   
+    
+}
+.logo:hover{
+    border: 7px solid  black;
+    cursor: pointer;
+    animation: bounce 2s 1;
+}
+
+.navigationItems > ul {
+    display: flex;
+    list-style-type:none;
+   
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+}
+
+.Search{
+    padding: 10px;
+    border: 1px solid black;    
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(45deg, grey, black);
+    outline: 2px solid #2980b9;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    height: 20px;
+    font-size: x-large;
+    
+   
+}
+.navigationItems> ul> li {
+    border: 1px solid  pink;
+    padding: 10px;
+    margin: 10px;
+    font-size: 34px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(45deg, #ff6f61, #d4a5a5);
+    outline: 5px solid black;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    
+    
+    
+}
+
+.navigationItems>ul>li:hover{
+    border: 7px solid  black;
+    cursor: pointer;
+    animation: bounce 2s 1;
+}
+
+.ResCard{
+    font-size:x-large;
+    border-radius: 10px;
+    width: 500px;
+    padding: 10px;
+    margin: 20px;
+    outline: 5px solid blue;    
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.ResCard:hover{
+    border: 7px solid  blue;
+    cursor: pointer;
+    animation: bounce 2s 1;
+}
+
+
+
+.ResLogo{
+    width: 100%;
+    margin-top: 10px; 
+}
+
+.RestaurantContainer{  
+    display: flex;
+    flex-wrap: wrap;
+}
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
